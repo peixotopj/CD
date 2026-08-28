@@ -69,3 +69,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+import { defineConfig } from 'vite'
+
+
+export default defineConfig({
+  base: '/atividade-ci-cd/',
+})
